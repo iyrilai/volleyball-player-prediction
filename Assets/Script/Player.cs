@@ -19,11 +19,11 @@ public class Player
 
     public float GetPoint()
     {
-        const float points = 25;
-        float totalMatchPoint = points * Matchs;
+        const float points = 25; //Max Point in volleyball match
+        float totalMatchPoint = points * Matchs; //Getting Overall points
         float totalPoint = Ap + Dp + Sp;
 
-        float playerPoint = totalMatchPoint / totalPoint;
+        float playerPoint = totalMatchPoint / totalPoint; //Calulate average points in inverse
 
         return playerPoint;
     }
