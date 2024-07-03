@@ -19,11 +19,11 @@ public class Player
 
     public float GetPoint()
     {
-        const int points = 25;
-        int totalMatchPoint = points * Matchs;
-        int totalPoint = Ap + Dp + Sp;
+        const float points = 25;
+        float totalMatchPoint = points * Matchs;
+        float totalPoint = Ap + Dp + Sp;
 
-        float playerPoint = (float)totalMatchPoint / totalPoint;
+        float playerPoint = totalMatchPoint / totalPoint;
 
         return playerPoint;
     }
